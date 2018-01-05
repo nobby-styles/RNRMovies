@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89C9B4722000148300EB26A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9B4712000148300EB26A8 /* AppDelegate.swift */; };
+		89C9B4742000148300EB26A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9B4732000148300EB26A8 /* ViewController.swift */; };
+		89C9B4772000148300EB26A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C9B4752000148300EB26A8 /* Main.storyboard */; };
+		89C9B4792000148300EB26A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C9B4782000148300EB26A8 /* Assets.xcassets */; };
+		89C9B47C2000148300EB26A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C9B47A2000148300EB26A8 /* LaunchScreen.storyboard */; };
+		89C9B4872000148300EB26A8 /* RNRMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9B4862000148300EB26A8 /* RNRMoviesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89C9B4832000148300EB26A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89C9B4662000148300EB26A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89C9B46D2000148300EB26A8;
+			remoteInfo = RNRMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89C9B46E2000148300EB26A8 /* RNRMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNRMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C9B4712000148300EB26A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89C9B4732000148300EB26A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89C9B4762000148300EB26A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89C9B4782000148300EB26A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89C9B47B2000148300EB26A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C9B47D2000148300EB26A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C9B4822000148300EB26A8 /* RNRMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNRMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C9B4862000148300EB26A8 /* RNRMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNRMoviesTests.swift; sourceTree = "<group>"; };
+		89C9B4882000148300EB26A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89C9B46B2000148300EB26A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C9B47F2000148300EB26A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89C9B4652000148300EB26A8 = {
+			isa = PBXGroup;
+			children = (
+				89C9B4702000148300EB26A8 /* RNRMovies */,
+				89C9B4852000148300EB26A8 /* RNRMoviesTests */,
+				89C9B46F2000148300EB26A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89C9B46F2000148300EB26A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89C9B46E2000148300EB26A8 /* RNRMovies.app */,
+				89C9B4822000148300EB26A8 /* RNRMoviesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89C9B4702000148300EB26A8 /* RNRMovies */ = {
+			isa = PBXGroup;
+			children = (
+				89C9B4712000148300EB26A8 /* AppDelegate.swift */,
+				89C9B4732000148300EB26A8 /* ViewController.swift */,
+				89C9B4752000148300EB26A8 /* Main.storyboard */,
+				89C9B4782000148300EB26A8 /* Assets.xcassets */,
+				89C9B47A2000148300EB26A8 /* LaunchScreen.storyboard */,
+				89C9B47D2000148300EB26A8 /* Info.plist */,
+			);
+			path = RNRMovies;
+			sourceTree = "<group>";
+		};
+		89C9B4852000148300EB26A8 /* RNRMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				89C9B4862000148300EB26A8 /* RNRMoviesTests.swift */,
+				89C9B4882000148300EB26A8 /* Info.plist */,
+			);
+			path = RNRMoviesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89C9B46D2000148300EB26A8 /* RNRMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C9B48B2000148300EB26A8 /* Build configuration list for PBXNativeTarget "RNRMovies" */;
+			buildPhases = (
+				89C9B46A2000148300EB26A8 /* Sources */,
+				89C9B46B2000148300EB26A8 /* Frameworks */,
+				89C9B46C2000148300EB26A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNRMovies;
+			productName = RNRMovies;
+			productReference = 89C9B46E2000148300EB26A8 /* RNRMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89C9B4812000148300EB26A8 /* RNRMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C9B48E2000148300EB26A8 /* Build configuration list for PBXNativeTarget "RNRMoviesTests" */;
+			buildPhases = (
+				89C9B47E2000148300EB26A8 /* Sources */,
+				89C9B47F2000148300EB26A8 /* Frameworks */,
+				89C9B4802000148300EB26A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89C9B4842000148300EB26A8 /* PBXTargetDependency */,
+			);
+			name = RNRMoviesTests;
+			productName = RNRMoviesTests;
+			productReference = 89C9B4822000148300EB26A8 /* RNRMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89C9B4662000148300EB26A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Robert Redmond";
+				TargetAttributes = {
+					89C9B46D2000148300EB26A8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					89C9B4812000148300EB26A8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 89C9B46D2000148300EB26A8;
+					};
+				};
+			};
+			buildConfigurationList = 89C9B4692000148300EB26A8 /* Build configuration list for PBXProject "RNRMovies" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89C9B4652000148300EB26A8;
+			productRefGroup = 89C9B46F2000148300EB26A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89C9B46D2000148300EB26A8 /* RNRMovies */,
+				89C9B4812000148300EB26A8 /* RNRMoviesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89C9B46C2000148300EB26A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C9B47C2000148300EB26A8 /* LaunchScreen.storyboard in Resources */,
+				89C9B4792000148300EB26A8 /* Assets.xcassets in Resources */,
+				89C9B4772000148300EB26A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C9B4802000148300EB26A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89C9B46A2000148300EB26A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C9B4742000148300EB26A8 /* ViewController.swift in Sources */,
+				89C9B4722000148300EB26A8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C9B47E2000148300EB26A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C9B4872000148300EB26A8 /* RNRMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89C9B4842000148300EB26A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89C9B46D2000148300EB26A8 /* RNRMovies */;
+			targetProxy = 89C9B4832000148300EB26A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89C9B4752000148300EB26A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C9B4762000148300EB26A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89C9B47A2000148300EB26A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C9B47B2000148300EB26A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89C9B4892000148300EB26A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89C9B48A2000148300EB26A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89C9B48C2000148300EB26A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNRMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robert.redmond.RNRMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89C9B48D2000148300EB26A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNRMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robert.redmond.RNRMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89C9B48F2000148300EB26A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNRMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robert.redmond.RNRMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNRMovies.app/RNRMovies";
+			};
+			name = Debug;
+		};
+		89C9B4902000148300EB26A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNRMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robert.redmond.RNRMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNRMovies.app/RNRMovies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89C9B4692000148300EB26A8 /* Build configuration list for PBXProject "RNRMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C9B4892000148300EB26A8 /* Debug */,
+				89C9B48A2000148300EB26A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C9B48B2000148300EB26A8 /* Build configuration list for PBXNativeTarget "RNRMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C9B48C2000148300EB26A8 /* Debug */,
+				89C9B48D2000148300EB26A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C9B48E2000148300EB26A8 /* Build configuration list for PBXNativeTarget "RNRMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C9B48F2000148300EB26A8 /* Debug */,
+				89C9B4902000148300EB26A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89C9B4662000148300EB26A8 /* Project object */;
+}
