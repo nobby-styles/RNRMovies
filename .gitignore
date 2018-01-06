@@ -5,3 +5,8 @@
 /.DS_Store
 *.xcuserstate
 /RNRMovies.xcodeproj/project.xcworkspace/xcuserdata/robertredmond.xcuserdatad/UserInterfaceState.xcuserstate
+Keys.plist
+/RNRMovies.xcodeproj/xcuserdata/robertredmond.xcuserdatad/xcschemes/xcschememanagement.plist
+/RNRMovies.xcodeproj/xcuserdata/robertredmond.xcuserdatad/xcschemes/RNRMoviesTests.xcscheme
+/RNRMovies.xcodeproj/xcuserdata/robertredmond.xcuserdatad/xcschemes/RNRMovies.xcscheme
+/RNRMovies.xcodeproj/xcuserdata/robertredmond.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist

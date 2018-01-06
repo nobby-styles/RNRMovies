@@ -10,7 +10,11 @@ protocol DataProvider {
 }
 
 class HttpDataProvider: DataProvider {
-    init(baseUrl: String, apiKey: String) {
+    init(baseUrl: String) {
+        var apiKey = ""
+        if let path = Bundle.main.path(forResource: "Keys", ofType: "plist"), let keys = NSDictionary(contentsOfFile: path) as? [String :String] {
+            apiKey = keys["ApiKey"] ?? ""
+        }
         self.baseUrlAndUrlKey = "\(baseUrl)&api_key=\(apiKey)"
     }
 
