@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45FBAF5FB9E7E712F2B8E651 /* HttpDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FBA5167AF40C5AB6ED1848 /* HttpDataProvider.swift */; };
 		89C9B4722000148300EB26A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9B4712000148300EB26A8 /* AppDelegate.swift */; };
 		89C9B4742000148300EB26A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9B4732000148300EB26A8 /* ViewController.swift */; };
 		89C9B4772000148300EB26A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C9B4752000148300EB26A8 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45FBA5167AF40C5AB6ED1848 /* HttpDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDataProvider.swift; sourceTree = "<group>"; };
 		89C9B46E2000148300EB26A8 /* RNRMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNRMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C9B4712000148300EB26A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89C9B4732000148300EB26A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45FBA6AA7D9B3016AD66D4CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45FBA5167AF40C5AB6ED1848 /* HttpDataProvider.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		89C9B4652000148300EB26A8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 				89C9B4782000148300EB26A8 /* Assets.xcassets */,
 				89C9B47A2000148300EB26A8 /* LaunchScreen.storyboard */,
 				89C9B47D2000148300EB26A8 /* Info.plist */,
+				45FBA6AA7D9B3016AD66D4CF /* Model */,
 			);
 			path = RNRMovies;
 			sourceTree = "<group>";
@@ -201,6 +212,7 @@
 			files = (
 				89C9B4742000148300EB26A8 /* ViewController.swift in Sources */,
 				89C9B4722000148300EB26A8 /* AppDelegate.swift in Sources */,
+				45FBAF5FB9E7E712F2B8E651 /* HttpDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

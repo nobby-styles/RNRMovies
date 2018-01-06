@@ -9,6 +9,7 @@
 import XCTest
 @testable import RNRMovies
 
+
 class RNRMoviesTests: XCTestCase {
     
     override func setUp() {
@@ -22,8 +23,7 @@ class RNRMoviesTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let dataProvider = Ht
     }
     
     func testPerformanceExample() {
