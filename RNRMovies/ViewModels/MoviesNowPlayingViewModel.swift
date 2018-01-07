@@ -29,6 +29,17 @@ class MoviesNowPlayingViewModel {
         }
     }
 
+    func createMovieDetailViewModel(index:Int) -> MovieDetailViewModel?{
+        guard movies.count > index else{
+            return nil
+        }
+        let urlString = "https://api.themoviedb.org/3/movie/\(self.movies[index].ID)?"
+        let httpDataProvider = HttpDataProvider(baseUrl: urlString)
+        let movieDetailDataManager = MovieDetailDataManager(dataProvider: httpDataProvider)
+        let movieDetailViewModel = MovieDetailViewModel(movieDetailDataManager: movieDetailDataManager)
+        return movieDetailViewModel
+    }
+
 
     fileprivate let moviesNowPlayingPlayingDataManager: NowPlayingDataManager
 

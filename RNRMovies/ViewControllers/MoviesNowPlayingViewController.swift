@@ -41,8 +41,23 @@ class MoviesNowPlayingViewController: UICollectionViewController {
         super.viewDidDisappear(animated)
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "movieDetailViewControllerSegue", sender: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "movieDetailViewControllerSegue" {
+            if let indexPath = self.collectionView?.indexPathsForSelectedItems, let viewModel = self.moviesNowPlayingViewModel?.createMovieDetailViewModel(index: (indexPath.first?.item)!) {
+                let controller = segue.destination as! MovieDetailViewController
+                controller.movieDetailViewModel = viewModel
+            }
+        }
+    }
+
+
 
 }
+
 
 extension MoviesNowPlayingViewController: UICollectionViewDelegateFlowLayout {
 
@@ -62,5 +77,9 @@ extension MoviesNowPlayingViewController: UICollectionViewDelegateFlowLayout {
     }
 
 }
+
+
+
+
     
 

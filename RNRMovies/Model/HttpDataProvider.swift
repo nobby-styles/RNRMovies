@@ -20,6 +20,7 @@ class HttpDataProvider: DataProvider {
 
     func fetchData(completionHandler: @escaping (Bool, Any?) -> ()) {
         let url = URL(string: "\(self.baseUrlAndUrlKey)")
+        debugPrint(self.baseUrlAndUrlKey)
         let dataTask = defaultSession.dataTask(with: url!) {
             data, response, error in
             if let error = error {

@@ -10,7 +10,7 @@ protocol DetailDataManager{
 }
 
 
-class MovieDetailDataManager{
+class MovieDetailDataManager: DetailDataManager{
     init(dataProvider: DataProvider) {
         self.dataProvider = dataProvider
     }

@@ -34,6 +34,8 @@ class MoviesNowPlayingDataManager: NowPlayingDataManager {
         }
     }
 
+
+
     fileprivate func parse(jsonData: [String: Any]) -> [Movie]? {
         guard let results = jsonData["results"] as? [[String: Any]] else {
             return nil
