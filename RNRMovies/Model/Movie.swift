@@ -12,4 +12,8 @@ struct Movie {
     let posterPath : String
     let averageVote: Float
 
+    func URLForImage() -> URL {
+        let urlStr = "https://image.tmdb.org/t/p/w400_and_h600_bestv2\(self.posterPath)"
+        return URL(string: urlStr)!
+    }
 }

@@ -5,7 +5,12 @@
 
 import Foundation
 
-class MoviesNowPlayingDataManager {
+protocol NowPlayingDataManager{
+    func fetchLatestMoviesNowPlaying(completionHandler: @escaping (Bool, [Movie]?) -> ())
+}
+
+
+class MoviesNowPlayingDataManager: NowPlayingDataManager {
     init(dataProvider: DataProvider) {
         self.dataProvider = dataProvider
     }

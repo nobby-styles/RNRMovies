@@ -16,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
+        if let navController = window?.rootViewController as? UINavigationController {
+            let moviesNowPlayingViewController = navController.viewControllers[0] as? MoviesNowPlayingViewController
+            let httpDataProvider = HttpDataProvider(baseUrl: "https://api.themoviedb.org/3/movie/now_playing?region=gb&")
+            let moviesNowPlayingDataManager = MoviesNowPlayingDataManager(dataProvider: httpDataProvider)
+            let moviesNowPlayingViewModel = MoviesNowPlayingViewModel(moviesNowPlayingPlayingDataManager: moviesNowPlayingDataManager)
+            moviesNowPlayingViewController?.moviesNowPlayingViewModel = moviesNowPlayingViewModel
+        }
         return true
     }
 
