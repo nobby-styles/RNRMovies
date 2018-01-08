@@ -9,18 +9,22 @@ protocol DataProvider {
     func fetchData(completionHandler: @escaping (Bool, Any?) -> ())
 }
 
-class HttpDataProvider: DataProvider {
+protocol MutableDataProvider: DataProvider{
+    func fetchData(urlString: String, completionHandler: @escaping (Bool, Any?) -> ())
+}
+
+class HttpDataProvider: DataProvider, MutableDataProvider {
     init(baseUrl: String) {
-        var apiKey = ""
+        var key = ""
         if let path = Bundle.main.path(forResource: "Keys", ofType: "plist"), let keys = NSDictionary(contentsOfFile: path) as? [String :String] {
-            apiKey = keys["ApiKey"] ?? ""
+            key = keys["ApiKey"] ?? ""
         }
-        self.baseUrlAndUrlKey = "\(baseUrl)&api_key=\(apiKey)"
+        self.apiKey = key
+        self.baseUrl = baseUrl
     }
 
-    func fetchData(completionHandler: @escaping (Bool, Any?) -> ()) {
-        let url = URL(string: "\(self.baseUrlAndUrlKey)")
-        debugPrint(self.baseUrlAndUrlKey)
+    func fetchData(urlString: String, completionHandler: @escaping (Bool, Any?) -> ()){
+        let url = URL(string: urlString + "api_key=" + self.apiKey)
         let dataTask = defaultSession.dataTask(with: url!) {
             data, response, error in
             if let error = error {
@@ -41,11 +45,19 @@ class HttpDataProvider: DataProvider {
 
             }
         }
-
         dataTask.resume()
+
 
     }
 
+    func fetchData(completionHandler: @escaping (Bool, Any?) -> ()) {
+        self.fetchData(urlString: self.baseUrl, completionHandler: completionHandler)
+
+    }
+
+
+
     fileprivate let defaultSession = URLSession(configuration: URLSessionConfiguration.default)
-    fileprivate let baseUrlAndUrlKey: String
+    fileprivate let baseUrl: String
+    fileprivate let apiKey: String
 }

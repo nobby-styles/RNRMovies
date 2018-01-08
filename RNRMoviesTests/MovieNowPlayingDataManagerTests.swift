@@ -24,37 +24,40 @@ class MovieNowPlayingDataManagerTests: XCTestCase {
         super.tearDown()
     }
 
-    func testFetchMovieDetailWithNilData() {
+
+    func testFetchLatestMoviesNowPlayingWithNilData() {
         let dataProvider = MockDataProvider()
 
-        let dataManager = MovieDetailDataManager(dataProvider: dataProvider)
-        dataManager.fetchMovieDetail() {
-            (updated, movie) in
+        let dataManager = MoviesNowPlayingDataManager(dataProvider: dataProvider)
+        dataManager.fetchLatestMoviesNowPlaying() {
+            (updated, array) in
             XCTAssertFalse(updated)
-            XCTAssertNil(movie, "Data")
+            XCTAssertNil(array, "Data")
         }
     }
 
-    func testFetchMovieDetailWithBadData() {
+    func testFetchLatestMoviesNowPlayingWithBadData() {
         let dataProvider = MockDataProvider()
-        dataProvider.dict = ["test": "test", "number": 123]
-        let dataManager = MovieDetailDataManager(dataProvider: dataProvider)
-        dataManager.fetchMovieDetail() {
-            (updated, movie) in
+        dataProvider.dict = ["test": "test", "id": 123]
+        let dataManager = MoviesNowPlayingDataManager(dataProvider: dataProvider)
+        dataManager.fetchLatestMoviesNowPlaying() {
+            (updated, array) in
             XCTAssertFalse(updated)
-            XCTAssertNil(movie, "Data")
+            XCTAssertNil(array, "Data")
         }
     }
 
-    func testFetchMovieDetailWithCorrectData() {
+    func testFetchLatestMoviesNowPlayingWithCorrectMovieData() {
         let dataProvider = MockDataProvider()
-        dataProvider.dict = ["id": Int(181808), "vote_average": Float(7.3), "title": "Star Wars: The Last Jedi", "overview": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.", "poster_path": "/xGWVjewoXnJhvxKW619cMzppJDQ.jpg"]
-        let dataManager = MovieDetailDataManager(dataProvider: dataProvider)
-        dataManager.fetchMovieDetail() {
-            (updated, movie) in
+        dataProvider.dict = ["results": [["id": Int(181808), "vote_average": Float(7.3), "title": "Star Wars: The Last Jedi", "overview": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.", "poster_path": "/xGWVjewoXnJhvxKW619cMzppJDQ.jpg"]]]
+        let dataManager = MoviesNowPlayingDataManager(dataProvider: dataProvider)
+        dataManager.fetchLatestMoviesNowPlaying() {
+            (updated, array) in
             XCTAssertTrue(updated)
-            XCTAssertNotNil(movie, "No Data")
-            if let movie = movie {
+            XCTAssertNotNil(array, "No Data")
+            if let array = array {
+                XCTAssertEqual(array.count, 1)
+                let movie = array[0]
                 XCTAssertEqual(movie.averageVote, Float(7.3))
                 XCTAssertEqual(movie.ID, Int(181808))
                 XCTAssertEqual(movie.overview, "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.")

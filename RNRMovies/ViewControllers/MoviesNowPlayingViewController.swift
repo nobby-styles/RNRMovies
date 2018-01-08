@@ -56,10 +56,7 @@ class MoviesNowPlayingViewController: UICollectionViewController {
 
 
 
-}
 
-
-extension MoviesNowPlayingViewController: UICollectionViewDelegateFlowLayout {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.moviesNowPlayingViewModel?.movies.count ?? 0
@@ -70,6 +67,10 @@ extension MoviesNowPlayingViewController: UICollectionViewDelegateFlowLayout {
         cell.movie = self.moviesNowPlayingViewModel?.movies[indexPath.item]
         return cell
     }
+}
+
+
+extension MoviesNowPlayingViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2

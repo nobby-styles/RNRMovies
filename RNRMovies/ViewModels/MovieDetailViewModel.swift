@@ -30,6 +30,19 @@ class MovieDetailViewModel {
         }
     }
 
+    var collectionTitle: String? {
+        get {
+            return self.movie?.collectionTitle
+        }
+    }
+
+    var collection: [Movie]? {
+        get {
+            return self.movie?.collection
+        }
+    }
+
+
 
     init(movieDetailDataManager: DetailDataManager) {
         self.movieDetailDataManager = movieDetailDataManager
@@ -51,6 +64,16 @@ class MovieDetailViewModel {
         }
     }
 
+    func createMovieDetailViewModel(index:Int) -> MovieDetailViewModel?{
+        guard let movies = self.collection, movies.count > index else{
+            return nil
+        }
+        let urlString = "https://api.themoviedb.org/3/movie/\(movies[index].ID)?"
+        let httpDataProvider = HttpDataProvider(baseUrl: urlString)
+        let movieDetailDataManager = MovieDetailDataManager(dataProvider: httpDataProvider)
+        let movieDetailViewModel = MovieDetailViewModel(movieDetailDataManager: movieDetailDataManager)
+        return movieDetailViewModel
+    }
 
 
 
